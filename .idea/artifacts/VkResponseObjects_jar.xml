@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="VkResponseObjects:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/VkResponseObjects_jar</output-path>
+    <root id="archive" name="VkResponseObjects.jar">
+      <element id="module-output" name="VkResponseObjects" />
+    </root>
+  </artifact>
+</component>
