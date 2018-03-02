@@ -4,7 +4,6 @@ package com.thebrodyaga.vkobjects.photos;
 import com.thebrodyaga.vkobjects.base.BaseCount;
 import com.thebrodyaga.vkobjects.base.BoolInt;
 import com.thebrodyaga.vkobjects.base.Likes;
-import com.thebrodyaga.vkobjects.base.PropertyExists;
 
 import java.util.List;
 import java.util.Objects;
@@ -146,7 +145,7 @@ public class PhotoFullXtrRealOffset {
      * Returns if the photo is hidden above the com.thebrodyaga.vkobjects.wall
      */
 
-    private PropertyExists hidden;
+    private Boolean hidden;
 
     /**
      * Real position of the photo
@@ -251,7 +250,7 @@ public class PhotoFullXtrRealOffset {
     }
 
     public boolean isHidden() {
-        return hidden == PropertyExists.PROPERTY_EXISTS;
+        return hidden ;
     }
 
     public Integer getRealOffset() {

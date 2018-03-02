@@ -3,7 +3,6 @@ package com.thebrodyaga.vkobjects.video;
 
 import com.thebrodyaga.vkobjects.base.BoolInt;
 import com.thebrodyaga.vkobjects.base.Likes;
-import com.thebrodyaga.vkobjects.base.PropertyExists;
 
 import java.util.List;
 import java.util.Objects;
@@ -112,13 +111,13 @@ public class VideoFull {
      * Returns if the com.thebrodyaga.vkobjects.video is processing
      */
 
-    private PropertyExists processing;
+    private Boolean processing;
 
     /**
      * Returns if the com.thebrodyaga.vkobjects.video is live translation
      */
 
-    private PropertyExists live;
+    private Boolean live;
 
 
     private VideoFiles files;
@@ -215,11 +214,11 @@ public class VideoFull {
     }
 
     public boolean isProcessing() {
-        return processing == PropertyExists.PROPERTY_EXISTS;
+        return processing ;
     }
 
     public boolean isLive() {
-        return live == PropertyExists.PROPERTY_EXISTS;
+        return live ;
     }
 
     public VideoFiles getFiles() {

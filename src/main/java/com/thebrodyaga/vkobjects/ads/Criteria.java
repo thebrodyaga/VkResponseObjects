@@ -2,7 +2,6 @@ package com.thebrodyaga.vkobjects.ads;
 
 
 import com.thebrodyaga.vkobjects.base.BoolInt;
-import com.thebrodyaga.vkobjects.base.PropertyExists;
 
 import java.util.Objects;
 
@@ -164,7 +163,7 @@ public class Criteria {
      * Travellers only
      */
 
-    private PropertyExists travellers;
+    private Boolean travellers;
 
     /**
      * School graduation year from
@@ -291,7 +290,7 @@ public class Criteria {
     }
 
     public boolean isTravellers() {
-        return travellers == PropertyExists.PROPERTY_EXISTS;
+        return travellers ;
     }
 
     public Integer getSchoolFrom() {
