@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.board;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.polls.Answer;
 
 import java.util.List;
@@ -34,7 +34,7 @@ public class TopicPoll {
      * Information whether the poll is closed
      */
 
-    private BoolInt isClosed;
+    private Boolean isClosed;
 
     /**
      * Poll question
@@ -70,7 +70,7 @@ public class TopicPoll {
     }
 
     public boolean isClosed() {
-        return isClosed == BoolInt.YES;
+        return isClosed;
     }
 
     public String getQuestion() {

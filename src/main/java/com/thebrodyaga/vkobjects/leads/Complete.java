@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.leads;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.responses.OkResponse;
 
 import java.util.Objects;
@@ -32,7 +32,7 @@ public class Complete {
      * Information whether test mode is enabled
      */
 
-    private BoolInt testMode;
+    private Boolean testMode;
 
 
     private OkResponse success;
@@ -50,7 +50,7 @@ public class Complete {
     }
 
     public boolean isTestMode() {
-        return testMode == BoolInt.YES;
+        return testMode;
     }
 
     public OkResponse getSuccess() {

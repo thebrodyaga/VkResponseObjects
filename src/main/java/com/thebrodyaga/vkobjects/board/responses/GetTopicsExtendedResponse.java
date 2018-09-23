@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.board.responses;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.board.DefaultOrder;
 import com.thebrodyaga.vkobjects.board.Topic;
 import com.thebrodyaga.vkobjects.users.UserMin;
@@ -29,7 +29,7 @@ public class GetTopicsExtendedResponse {
      * Information whether current user can add topic
      */
 
-    private BoolInt canAddTopics;
+    private Boolean canAddTopics;
 
 
     private List<UserMin> profiles;
@@ -47,7 +47,7 @@ public class GetTopicsExtendedResponse {
     }
 
     public boolean canAddTopics() {
-        return canAddTopics == BoolInt.YES;
+        return canAddTopics;
     }
 
     public List<UserMin> getProfiles() {

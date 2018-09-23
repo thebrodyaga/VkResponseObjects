@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.search;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.groups.Group;
 import com.thebrodyaga.vkobjects.users.UserMin;
 
@@ -33,7 +33,7 @@ public class Hint {
      * Information whether the object has been found globally
      */
 
-    private BoolInt global;
+    private Boolean global;
 
 
     private Group group;
@@ -54,7 +54,7 @@ public class Hint {
     }
 
     public boolean isGlobal() {
-        return global == BoolInt.YES;
+        return global;
     }
 
     public Group getGroup() {

@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.users;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.Sex;
 
 import java.util.Objects;
@@ -38,13 +38,13 @@ public class User extends UserMin {
      * Information whether the user is online
      */
 
-    private BoolInt online;
+    private Boolean online;
 
     /**
      * Information whether the user is online in mobile site or application
      */
 
-    private BoolInt onlineMobile;
+    private Boolean onlineMobile;
 
     /**
      * Application ID
@@ -69,11 +69,11 @@ public class User extends UserMin {
     }
 
     public boolean isOnline() {
-        return online == BoolInt.YES;
+        return online;
     }
 
     public boolean isOnlineMobile() {
-        return onlineMobile == BoolInt.YES;
+        return onlineMobile;
     }
 
     public Integer getOnlineApp() {

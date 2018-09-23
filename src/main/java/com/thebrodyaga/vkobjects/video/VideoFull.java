@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.video;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.Likes;
 
 import java.util.List;
@@ -99,13 +99,13 @@ public class VideoFull {
      * Information whether current user can edit the com.thebrodyaga.vkobjects.video
      */
 
-    private BoolInt canEdit;
+    private Boolean canEdit;
 
     /**
      * Information whether current user can add the com.thebrodyaga.vkobjects.video
      */
 
-    private BoolInt canAdd;
+    private Boolean canAdd;
 
     /**
      * Returns if the com.thebrodyaga.vkobjects.video is processing
@@ -132,13 +132,13 @@ public class VideoFull {
      * Information whether current user can comment the com.thebrodyaga.vkobjects.video
      */
 
-    private BoolInt canComment;
+    private Boolean canComment;
 
     /**
      * Information whether current user can comment the com.thebrodyaga.vkobjects.video
      */
 
-    private BoolInt canRepost;
+    private Boolean canRepost;
 
 
     private Likes likes;
@@ -147,7 +147,7 @@ public class VideoFull {
      * Information whether the com.thebrodyaga.vkobjects.video is repeated
      */
 
-    private BoolInt repeat;
+    private Boolean repeat;
 
     public Integer getId() {
         return id;
@@ -206,11 +206,11 @@ public class VideoFull {
     }
 
     public boolean canEdit() {
-        return canEdit == BoolInt.YES;
+        return canEdit;
     }
 
     public boolean canAdd() {
-        return canAdd == BoolInt.YES;
+        return canAdd;
     }
 
     public boolean isProcessing() {
@@ -234,11 +234,11 @@ public class VideoFull {
     }
 
     public boolean canComment() {
-        return canComment == BoolInt.YES;
+        return canComment;
     }
 
     public boolean canRepost() {
-        return canRepost == BoolInt.YES;
+        return canRepost;
     }
 
     public Likes getLikes() {
@@ -246,7 +246,7 @@ public class VideoFull {
     }
 
     public boolean isRepeat() {
-        return repeat == BoolInt.YES;
+        return repeat;
     }
 
     @Override

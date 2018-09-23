@@ -2,7 +2,7 @@ package com.thebrodyaga.vkobjects.database;
 
 
 import com.thebrodyaga.vkobjects.base.BaseObject;
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -26,7 +26,7 @@ public class City extends BaseObject {
      * Information whether the city is included in important cities list
      */
 
-    private BoolInt important;
+    private Boolean important;
 
     public String getArea() {
         return area;
@@ -37,7 +37,7 @@ public class City extends BaseObject {
     }
 
     public boolean isImportant() {
-        return important == BoolInt.YES;
+        return important;
     }
 
     @Override

@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.pages;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -31,13 +31,13 @@ public class WikipageFull {
      * Information whether current user can edit the page
      */
 
-    private BoolInt currentUserCanEdit;
+    private Boolean currentUserCanEdit;
 
     /**
      * Information whether current user can edit the page access settings
      */
 
-    private BoolInt currentUserCanEditAccess;
+    private Boolean currentUserCanEditAccess;
 
     /**
      * View settings of the page
@@ -112,11 +112,11 @@ public class WikipageFull {
     }
 
     public boolean isCurrentUserCanEdit() {
-        return currentUserCanEdit == BoolInt.YES;
+        return currentUserCanEdit;
     }
 
     public boolean isCurrentUserCanEditAccess() {
-        return currentUserCanEditAccess == BoolInt.YES;
+        return currentUserCanEditAccess;
     }
 
     public PrivacySettings getWhoCanView() {

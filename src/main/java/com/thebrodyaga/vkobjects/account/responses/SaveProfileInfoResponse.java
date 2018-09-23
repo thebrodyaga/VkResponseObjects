@@ -2,7 +2,7 @@ package com.thebrodyaga.vkobjects.account.responses;
 
 
 import com.thebrodyaga.vkobjects.account.NameRequest;
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -14,13 +14,13 @@ public class SaveProfileInfoResponse {
      * 1 if changes has been processed
      */
 
-    private BoolInt changed;
+    private Boolean changed;
 
 
     private NameRequest nameRequest;
 
     public boolean isChanged() {
-        return changed == BoolInt.YES;
+        return changed;
     }
 
     public NameRequest getNameRequest() {

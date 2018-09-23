@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.Image;
 
 import java.util.List;
@@ -16,13 +16,13 @@ public class Cover {
      * Information whether cover is enabled
      */
 
-    private BoolInt enabled;
+    private Boolean enabled;
 
 
     private List<Image> images;
 
     public boolean isEnabled() {
-        return enabled == BoolInt.YES;
+        return enabled;
     }
 
     public List<Image> getImages() {

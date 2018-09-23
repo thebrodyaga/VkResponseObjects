@@ -2,7 +2,7 @@ package com.thebrodyaga.vkobjects.photos;
 
 
 import com.thebrodyaga.vkobjects.base.BaseCount;
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.Likes;
 
 import java.util.List;
@@ -136,7 +136,7 @@ public class PhotoFull {
      * Information whether current user can comment the photo
      */
 
-    private BoolInt canComment;
+    private Boolean canComment;
 
 
     private BaseCount tags;
@@ -230,7 +230,7 @@ public class PhotoFull {
     }
 
     public boolean canComment() {
-        return canComment == BoolInt.YES;
+        return canComment;
     }
 
     public BaseCount getTags() {

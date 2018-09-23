@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.video;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.List;
 import java.util.Objects;
@@ -41,7 +41,7 @@ public class CatBlock {
      * Information whether the block can be hidden
      */
 
-    private BoolInt canHide;
+    private Boolean canHide;
 
     /**
      * Block type
@@ -70,7 +70,7 @@ public class CatBlock {
     }
 
     public boolean canHide() {
-        return canHide == BoolInt.YES;
+        return canHide;
     }
 
     public CatBlockType getType() {

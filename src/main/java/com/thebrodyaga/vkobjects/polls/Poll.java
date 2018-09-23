@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.polls;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.List;
 import java.util.Objects;
@@ -50,7 +50,7 @@ public class Poll {
     private List<Answer> answers;
 
 
-    private BoolInt anonymous;
+    private Boolean anonymous;
 
     public Integer getId() {
         return id;
@@ -80,7 +80,7 @@ public class Poll {
         return answers;
     }
 
-    public BoolInt getAnonymous() {
+    public Boolean getAnonymous() {
         return anonymous;
     }
 

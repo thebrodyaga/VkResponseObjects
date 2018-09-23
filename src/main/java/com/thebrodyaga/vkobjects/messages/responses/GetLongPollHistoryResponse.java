@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.messages.responses;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.groups.Group;
 import com.thebrodyaga.vkobjects.messages.Chat;
 import com.thebrodyaga.vkobjects.messages.LongpollMessages;
@@ -34,7 +34,7 @@ public class GetLongPollHistoryResponse {
     private Integer newPts;
 
 
-    private BoolInt more;
+    private Boolean more;
 
     public List<List<Integer>> getHistory() {
         return history;
@@ -60,7 +60,7 @@ public class GetLongPollHistoryResponse {
         return newPts;
     }
 
-    public BoolInt getMore() {
+    public Boolean getMore() {
         return more;
     }
 

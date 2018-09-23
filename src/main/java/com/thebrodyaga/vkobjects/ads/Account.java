@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.ads;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -25,7 +25,7 @@ public class Account {
      * Information whether com.thebrodyaga.vkobjects.account is active
      */
 
-    private BoolInt accountStatus;
+    private Boolean accountStatus;
 
 
     private AccessRole accessRole;
@@ -39,7 +39,7 @@ public class Account {
     }
 
     public boolean isAccountStatus() {
-        return accountStatus == BoolInt.YES;
+        return accountStatus;
     }
 
     public AccessRole getAccessRole() {

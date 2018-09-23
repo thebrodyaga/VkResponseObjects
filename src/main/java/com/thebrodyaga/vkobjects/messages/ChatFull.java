@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.messages;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.List;
 import java.util.Objects;
@@ -63,13 +63,13 @@ public class ChatFull {
      * Shows that user has been left the chat
      */
 
-    private BoolInt left;
+    private Boolean left;
 
     /**
      * Shows that user has been kicked from the chat
      */
 
-    private BoolInt kicked;
+    private Boolean kicked;
 
     public Integer getId() {
         return id;
@@ -108,11 +108,11 @@ public class ChatFull {
     }
 
     public boolean left() {
-        return left == BoolInt.YES;
+        return left;
     }
 
     public boolean kicked() {
-        return kicked == BoolInt.YES;
+        return kicked;
     }
 
     @Override

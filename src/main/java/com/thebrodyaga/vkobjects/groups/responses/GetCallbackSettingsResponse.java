@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups.responses;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -13,226 +13,226 @@ public class GetCallbackSettingsResponse {
      * Whether com.thebrodyaga.vkobjects.notifications about new message enabled
      */
 
-    private BoolInt messageNew;
+    private Boolean messageNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about allowed com.thebrodyaga.vkobjects.messages
      */
 
-    private BoolInt messageAllow;
+    private Boolean messageAllow;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about denied com.thebrodyaga.vkobjects.messages
      */
 
-    private BoolInt messageDeny;
+    private Boolean messageDeny;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new com.thebrodyaga.vkobjects.photos enabled
      */
 
-    private BoolInt photoNew;
+    private Boolean photoNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new audios enabled
      */
 
-    private BoolInt audioNew;
+    private Boolean audioNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new videos enabled
      */
 
-    private BoolInt videoNew;
+    private Boolean videoNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new reposts enabled
      */
 
-    private BoolInt wallRepost;
+    private Boolean wallRepost;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new com.thebrodyaga.vkobjects.wall replies enabled
      */
 
-    private BoolInt wallReplyNew;
+    private Boolean wallReplyNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about com.thebrodyaga.vkobjects.wall replies edits enabled
      */
 
-    private BoolInt wallReplyEdit;
+    private Boolean wallReplyEdit;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new com.thebrodyaga.vkobjects.wall posts enabled
      */
 
-    private BoolInt wallPostNew;
+    private Boolean wallPostNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new com.thebrodyaga.vkobjects.board posts enabled
      */
 
-    private BoolInt boardPostNew;
+    private Boolean boardPostNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about com.thebrodyaga.vkobjects.board posts edits enabled
      */
 
-    private BoolInt boardPostEdit;
+    private Boolean boardPostEdit;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about com.thebrodyaga.vkobjects.board posts restores enabled
      */
 
-    private BoolInt boardPostRestore;
+    private Boolean boardPostRestore;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about com.thebrodyaga.vkobjects.board posts deleted enabled
      */
 
-    private BoolInt boardPostDelete;
+    private Boolean boardPostDelete;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new photo comments enabled
      */
 
-    private BoolInt photoCommentNew;
+    private Boolean photoCommentNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new com.thebrodyaga.vkobjects.video comments enabled
      */
 
-    private BoolInt videoCommentNew;
+    private Boolean videoCommentNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new com.thebrodyaga.vkobjects.market comments enabled
      */
 
-    private BoolInt marketCommentNew;
+    private Boolean marketCommentNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about new vote in a public poll
      */
 
-    private BoolInt pollVoteNew;
+    private Boolean pollVoteNew;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about anyone joined the community enabled
      */
 
-    private BoolInt groupJoin;
+    private Boolean groupJoin;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about anyone left the community enabled
      */
 
-    private BoolInt groupLeave;
+    private Boolean groupLeave;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about changed group settings
      */
 
-    private BoolInt groupChangeSettings;
+    private Boolean groupChangeSettings;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about changed group photo
      */
 
-    private BoolInt groupChangePhoto;
+    private Boolean groupChangePhoto;
 
     /**
      * Whether com.thebrodyaga.vkobjects.notifications about changed group officers
      */
 
-    private BoolInt groupOfficersEdit;
+    private Boolean groupOfficersEdit;
 
     public boolean isMessageNew() {
-        return messageNew == BoolInt.YES;
+        return messageNew;
     }
 
     public boolean isMessageAllow() {
-        return messageAllow == BoolInt.YES;
+        return messageAllow;
     }
 
     public boolean isMessageDeny() {
-        return messageDeny == BoolInt.YES;
+        return messageDeny;
     }
 
     public boolean isPhotoNew() {
-        return photoNew == BoolInt.YES;
+        return photoNew;
     }
 
     public boolean isAudioNew() {
-        return audioNew == BoolInt.YES;
+        return audioNew;
     }
 
     public boolean isVideoNew() {
-        return videoNew == BoolInt.YES;
+        return videoNew;
     }
 
     public boolean isWallRepost() {
-        return wallRepost == BoolInt.YES;
+        return wallRepost;
     }
 
     public boolean isWallReplyNew() {
-        return wallReplyNew == BoolInt.YES;
+        return wallReplyNew;
     }
 
     public boolean isWallReplyEdit() {
-        return wallReplyEdit == BoolInt.YES;
+        return wallReplyEdit;
     }
 
     public boolean isWallPostNew() {
-        return wallPostNew == BoolInt.YES;
+        return wallPostNew;
     }
 
     public boolean isBoardPostNew() {
-        return boardPostNew == BoolInt.YES;
+        return boardPostNew;
     }
 
     public boolean isBoardPostEdit() {
-        return boardPostEdit == BoolInt.YES;
+        return boardPostEdit;
     }
 
     public boolean isBoardPostRestore() {
-        return boardPostRestore == BoolInt.YES;
+        return boardPostRestore;
     }
 
     public boolean isBoardPostDelete() {
-        return boardPostDelete == BoolInt.YES;
+        return boardPostDelete;
     }
 
     public boolean isPhotoCommentNew() {
-        return photoCommentNew == BoolInt.YES;
+        return photoCommentNew;
     }
 
     public boolean isVideoCommentNew() {
-        return videoCommentNew == BoolInt.YES;
+        return videoCommentNew;
     }
 
     public boolean isMarketCommentNew() {
-        return marketCommentNew == BoolInt.YES;
+        return marketCommentNew;
     }
 
     public boolean isGroupLeave() {
-        return groupLeave == BoolInt.YES;
+        return groupLeave;
     }
 
     public boolean isGroupJoin() {
-        return pollVoteNew == BoolInt.YES;
+        return pollVoteNew;
     }
 
     public boolean isGroupChangeSettings() {
-        return groupChangeSettings == BoolInt.YES;
+        return groupChangeSettings;
     }
 
     public boolean isGroupChangePhoto() {
-        return groupChangePhoto == BoolInt.YES;
+        return groupChangePhoto;
     }
 
     public boolean isGroupOfficersEdit() {
-        return groupOfficersEdit == BoolInt.YES;
+        return groupOfficersEdit;
     }
 
     @Override

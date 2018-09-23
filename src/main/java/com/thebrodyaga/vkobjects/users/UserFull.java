@@ -3,7 +3,7 @@ package com.thebrodyaga.vkobjects.users;
 
 import com.thebrodyaga.vkobjects.audio.AudioFull;
 import com.thebrodyaga.vkobjects.base.BaseObject;
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.Country;
 
 import java.util.List;
@@ -53,7 +53,7 @@ public class UserFull extends User {
      * Information whether current user has "little light" on his page
      */
 
-    private BoolInt trending;
+    private Boolean trending;
 
     /**
      * URL of square photo of the user with 200 pixels in width
@@ -95,19 +95,19 @@ public class UserFull extends User {
      * Information whether the user has main photo
      */
 
-    private BoolInt hasPhoto;
+    private Boolean hasPhoto;
 
     /**
      * Information whether the user specified his phone number
      */
 
-    private BoolInt hasMobile;
+    private Boolean hasMobile;
 
     /**
      * Information whether the user is a friend of current user
      */
 
-    private BoolInt isFriend;
+    private Boolean isFriend;
 
     /**
      * Friend com.thebrodyaga.vkobjects.status for current user
@@ -119,37 +119,37 @@ public class UserFull extends User {
      * Information whether current user can comment com.thebrodyaga.vkobjects.wall posts
      */
 
-    private BoolInt wallComments;
+    private Boolean wallComments;
 
     /**
      * Information whether current user can post on the user's com.thebrodyaga.vkobjects.wall
      */
 
-    private BoolInt canPost;
+    private Boolean canPost;
 
     /**
      * Information whether current user can see other com.thebrodyaga.vkobjects.users' com.thebrodyaga.vkobjects.audio on the com.thebrodyaga.vkobjects.wall
      */
 
-    private BoolInt canSeeAllPosts;
+    private Boolean canSeeAllPosts;
 
     /**
      * Information whether current user can see the user's com.thebrodyaga.vkobjects.audio
      */
 
-    private BoolInt canSeeAudio;
+    private Boolean canSeeAudio;
 
     /**
      * Information whether current user can write private message
      */
 
-    private BoolInt canWritePrivateMessage;
+    private Boolean canWritePrivateMessage;
 
     /**
      * Information whether current user can send a friend request
      */
 
-    private BoolInt canSendFriendRequest;
+    private Boolean canSendFriendRequest;
 
     /**
      * Information whether current user can see
@@ -233,7 +233,7 @@ public class UserFull extends User {
      * Information whether the user is verified
      */
 
-    private BoolInt verified;
+    private Boolean verified;
 
     /**
      * Number of user's followers
@@ -245,25 +245,25 @@ public class UserFull extends User {
      * Information whether current user is in the requested user's blacklist.
      */
 
-    private BoolInt blacklisted;
+    private Boolean blacklisted;
 
     /**
      * Information whether the requested user is in current user's blacklist
      */
 
-    private BoolInt blacklistedByMe;
+    private Boolean blacklistedByMe;
 
     /**
      * Information whether the requested user is in faves of current user
      */
 
-    private BoolInt isFavorite;
+    private Boolean isFavorite;
 
     /**
      * Information whether the requested user is hidden from current user's com.thebrodyaga.vkobjects.newsfeed
      */
 
-    private BoolInt isHiddenFromFeed;
+    private Boolean isHiddenFromFeed;
 
     /**
      * Number of common com.thebrodyaga.vkobjects.friends with current user
@@ -456,15 +456,15 @@ public class UserFull extends User {
     }
 
     public boolean hasPhoto() {
-        return hasPhoto == BoolInt.YES;
+        return hasPhoto;
     }
 
     public boolean hasMobile() {
-        return hasMobile == BoolInt.YES;
+        return hasMobile;
     }
 
     public boolean isFriend() {
-        return isFriend == BoolInt.YES;
+        return isFriend;
     }
 
     public Integer getFriendStatus() {
@@ -472,27 +472,27 @@ public class UserFull extends User {
     }
 
     public boolean isWallComments() {
-        return wallComments == BoolInt.YES;
+        return wallComments;
     }
 
     public boolean canPost() {
-        return canPost == BoolInt.YES;
+        return canPost;
     }
 
     public boolean canSeeAllPosts() {
-        return canSeeAllPosts == BoolInt.YES;
+        return canSeeAllPosts;
     }
 
     public boolean canSeeAudio() {
-        return canSeeAudio == BoolInt.YES;
+        return canSeeAudio;
     }
 
     public boolean canWritePrivateMessage() {
-        return canWritePrivateMessage == BoolInt.YES;
+        return canWritePrivateMessage;
     }
 
     public boolean canSendFriendRequest() {
-        return canSendFriendRequest == BoolInt.YES;
+        return canSendFriendRequest;
     }
 
     public String getMobilePhone() {
@@ -556,7 +556,7 @@ public class UserFull extends User {
     }
 
     public boolean isVerified() {
-        return verified == BoolInt.YES;
+        return verified;
     }
 
     public Integer getFollowersCount() {
@@ -564,19 +564,19 @@ public class UserFull extends User {
     }
 
     public boolean isBlacklisted() {
-        return blacklisted == BoolInt.YES;
+        return blacklisted;
     }
 
     public boolean isBlacklistedByMe() {
-        return blacklistedByMe == BoolInt.YES;
+        return blacklistedByMe;
     }
 
     public boolean isFavorite() {
-        return isFavorite == BoolInt.YES;
+        return isFavorite;
     }
 
     public boolean isHiddenFromFeed() {
-        return isHiddenFromFeed == BoolInt.YES;
+        return isHiddenFromFeed;
     }
 
     public Integer getCommonCount() {
@@ -688,7 +688,7 @@ public class UserFull extends User {
     }
 
     public boolean isTrending() {
-        return trending == BoolInt.YES;
+        return trending;
     }
 
     @Override

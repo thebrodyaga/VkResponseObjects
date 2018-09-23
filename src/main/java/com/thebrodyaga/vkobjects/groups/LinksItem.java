@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -25,7 +25,7 @@ public class LinksItem {
      * Information whether the link title can be edited
      */
 
-    private BoolInt editTitle;
+    private Boolean editTitle;
 
     /**
      * Link title
@@ -60,7 +60,7 @@ public class LinksItem {
     }
 
     public boolean isEditTitle() {
-        return editTitle == BoolInt.YES;
+        return editTitle;
     }
 
     public String getName() {

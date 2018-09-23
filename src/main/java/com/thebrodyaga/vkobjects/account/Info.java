@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.account;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -19,25 +19,25 @@ public class Info {
      * Information whether HTTPS-only is enabled
      */
 
-    private BoolInt httpsRequired;
+    private Boolean httpsRequired;
 
     /**
      * Information whether only owners posts should be shown
      */
 
-    private BoolInt ownPostsDefault;
+    private Boolean ownPostsDefault;
 
     /**
      * Information whether com.thebrodyaga.vkobjects.wall comments should be hidden
      */
 
-    private BoolInt noWallReplies;
+    private Boolean noWallReplies;
 
     /**
      * Information whether user has been processed intro
      */
 
-    private BoolInt intro;
+    private Boolean intro;
 
     /**
      * Language ID
@@ -49,26 +49,26 @@ public class Info {
      * Two factor authentication is required
      */
 
-    private BoolInt twoFactorAuthRequired;
+    private Boolean twoFactorAuthRequired;
 
     public String getCountry() {
         return country;
     }
 
     public boolean isHttpsRequired() {
-        return httpsRequired == BoolInt.YES;
+        return httpsRequired;
     }
 
     public boolean isOwnPostsDefault() {
-        return ownPostsDefault == BoolInt.YES;
+        return ownPostsDefault;
     }
 
     public boolean isNoWallReplies() {
-        return noWallReplies == BoolInt.YES;
+        return noWallReplies;
     }
 
     public boolean isIntro() {
-        return intro == BoolInt.YES;
+        return intro;
     }
 
     public Integer getLang() {
@@ -76,7 +76,7 @@ public class Info {
     }
 
     public boolean isTwoFactorAuthRequired() {
-        return twoFactorAuthRequired == BoolInt.YES;
+        return twoFactorAuthRequired;
     }
 
     @Override

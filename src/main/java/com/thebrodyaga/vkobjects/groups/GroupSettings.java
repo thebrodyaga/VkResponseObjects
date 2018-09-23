@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.places.PlaceMin;
 
 import java.util.List;
@@ -78,13 +78,13 @@ public class GroupSettings {
      * Information whether the obscene filter is enabled
      */
 
-    private BoolInt obsceneFilter;
+    private Boolean obsceneFilter;
 
     /**
      * Information whether the stopwords filter is enabled
      */
 
-    private BoolInt obsceneStopwords;
+    private Boolean obsceneStopwords;
 
     /**
      * The list of stop words
@@ -164,11 +164,11 @@ public class GroupSettings {
     }
 
     public boolean isObsceneFilter() {
-        return obsceneFilter == BoolInt.YES;
+        return obsceneFilter;
     }
 
     public boolean isObsceneStopwords() {
-        return obsceneStopwords == BoolInt.YES;
+        return obsceneStopwords;
     }
 
     public String getObsceneWords() {

@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -49,7 +49,7 @@ public class Group {
      * Information whether current user is administrator
      */
 
-    private BoolInt isAdmin;
+    private Boolean isAdmin;
 
     /**
      * Level of current user's credentials as manager
@@ -61,7 +61,7 @@ public class Group {
      * Information whether current user is member
      */
 
-    private BoolInt isMember;
+    private Boolean isMember;
 
     /**
      * URL of square photo of the community with 50 pixels in width
@@ -106,7 +106,7 @@ public class Group {
     }
 
     public boolean isAdmin() {
-        return isAdmin == BoolInt.YES;
+        return isAdmin;
     }
 
     public GroupAdminLevel getAdminLevel() {
@@ -114,7 +114,7 @@ public class Group {
     }
 
     public boolean isMember() {
-        return isMember == BoolInt.YES;
+        return isMember;
     }
 
     public String getPhoto50() {

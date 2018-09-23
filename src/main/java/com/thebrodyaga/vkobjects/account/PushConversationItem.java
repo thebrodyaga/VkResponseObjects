@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.account;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -20,7 +20,7 @@ public class PushConversationItem {
      * Information whether the sound are enabled
      */
 
-    private BoolInt sound;
+    private Boolean sound;
 
     /**
      * Time until that com.thebrodyaga.vkobjects.notifications are disabled in seconds
@@ -33,7 +33,7 @@ public class PushConversationItem {
     }
 
     public boolean isSound() {
-        return sound == BoolInt.YES;
+        return sound;
     }
 
     public Integer getDisabledUntil() {

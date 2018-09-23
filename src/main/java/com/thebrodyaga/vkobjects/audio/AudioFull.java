@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.audio;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -43,7 +43,7 @@ public class AudioFull extends Audio {
      * Information whether the com.thebrodyaga.vkobjects.audio is hidden from com.thebrodyaga.vkobjects.search
      */
 
-    private BoolInt noSearch;
+    private Boolean noSearch;
 
     public Integer getDuration() {
         return duration;
@@ -66,7 +66,7 @@ public class AudioFull extends Audio {
     }
 
     public boolean isNoSearch() {
-        return noSearch == BoolInt.YES;
+        return noSearch;
     }
 
     @Override

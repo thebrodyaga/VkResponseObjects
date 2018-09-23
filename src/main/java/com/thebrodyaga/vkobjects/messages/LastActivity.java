@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.messages;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -13,7 +13,7 @@ public class LastActivity {
      * Information whether user is online
      */
 
-    private BoolInt online;
+    private Boolean online;
 
     /**
      * Time when user was online in Unixtime
@@ -22,7 +22,7 @@ public class LastActivity {
     private Integer time;
 
     public boolean isOnline() {
-        return online == BoolInt.YES;
+        return online;
     }
 
     public Integer getTime() {

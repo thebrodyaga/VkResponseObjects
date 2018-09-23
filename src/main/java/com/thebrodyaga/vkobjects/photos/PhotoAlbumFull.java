@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.photos;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.List;
 import java.util.Objects;
@@ -74,25 +74,25 @@ public class PhotoAlbumFull {
      * Information whether only community administrators can upload com.thebrodyaga.vkobjects.photos
      */
 
-    private BoolInt uploadByAdminsOnly;
+    private Boolean uploadByAdminsOnly;
 
     /**
      * Information whether album comments are disabled
      */
 
-    private BoolInt commentsDisabled;
+    private Boolean commentsDisabled;
 
     /**
      * Information whether current user can upload photo to the album
      */
 
-    private BoolInt canUpload;
+    private Boolean canUpload;
 
     /**
      * Information whether the album thumb is last photo
      */
 
-    private BoolInt thumbIsLast;
+    private Boolean thumbIsLast;
 
 
     private List<PhotoSizes> sizes;
@@ -142,19 +142,19 @@ public class PhotoAlbumFull {
     }
 
     public boolean isUploadByAdminsOnly() {
-        return uploadByAdminsOnly == BoolInt.YES;
+        return uploadByAdminsOnly;
     }
 
     public boolean isCommentsDisabled() {
-        return commentsDisabled == BoolInt.YES;
+        return commentsDisabled;
     }
 
     public boolean canUpload() {
-        return canUpload == BoolInt.YES;
+        return canUpload;
     }
 
     public boolean isThumbIsLast() {
-        return thumbIsLast == BoolInt.YES;
+        return thumbIsLast;
     }
 
     public List<PhotoSizes> getSizes() {

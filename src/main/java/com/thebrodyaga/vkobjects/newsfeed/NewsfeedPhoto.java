@@ -2,7 +2,7 @@ package com.thebrodyaga.vkobjects.newsfeed;
 
 
 import com.thebrodyaga.vkobjects.base.BaseCount;
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.Likes;
 import com.thebrodyaga.vkobjects.photos.Photo;
 
@@ -23,13 +23,13 @@ public class NewsfeedPhoto extends Photo {
      * Information whether current user can comment the photo
      */
 
-    private BoolInt canComment;
+    private Boolean canComment;
 
     /**
      * Information whether current user can repost the photo
      */
 
-    private BoolInt canRepost;
+    private Boolean canRepost;
 
     public Likes getLikes() {
         return likes;
@@ -40,11 +40,11 @@ public class NewsfeedPhoto extends Photo {
     }
 
     public boolean canComment() {
-        return canComment == BoolInt.YES;
+        return canComment;
     }
 
     public boolean canRepost() {
-        return canRepost == BoolInt.YES;
+        return canRepost;
     }
 
     @Override

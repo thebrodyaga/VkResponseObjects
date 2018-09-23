@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.video;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -43,7 +43,7 @@ public class VideoTag {
      * Information whether tha tag is reviewed
      */
 
-    private BoolInt viewed;
+    private Boolean viewed;
 
     public Integer getUserId() {
         return userId;
@@ -66,7 +66,7 @@ public class VideoTag {
     }
 
     public boolean isViewed() {
-        return viewed == BoolInt.YES;
+        return viewed;
     }
 
     @Override

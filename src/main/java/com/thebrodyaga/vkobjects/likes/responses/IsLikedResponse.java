@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.likes.responses;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -13,20 +13,20 @@ public class IsLikedResponse {
      * Information whether user liked the object
      */
 
-    private BoolInt liked;
+    private Boolean liked;
 
     /**
      * Information whether user reposted the object
      */
 
-    private BoolInt copied;
+    private Boolean copied;
 
     public boolean isLiked() {
-        return liked == BoolInt.YES;
+        return liked;
     }
 
     public boolean isCopied() {
-        return copied == BoolInt.YES;
+        return copied;
     }
 
     @Override

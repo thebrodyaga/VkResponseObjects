@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.video;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -97,13 +97,13 @@ public class Video {
      * Information whether current user can edit the com.thebrodyaga.vkobjects.video
      */
 
-    private BoolInt canEdit;
+    private Boolean canEdit;
 
     /**
      * Information whether current user can add the com.thebrodyaga.vkobjects.video
      */
 
-    private BoolInt canAdd;
+    private Boolean canAdd;
 
     /**
      * Returns if the com.thebrodyaga.vkobjects.video is processing
@@ -177,11 +177,11 @@ public class Video {
     }
 
     public boolean canEdit() {
-        return canEdit == BoolInt.YES;
+        return canEdit;
     }
 
     public boolean canAdd() {
-        return canAdd == BoolInt.YES;
+        return canAdd;
     }
 
     public boolean isProcessing() {

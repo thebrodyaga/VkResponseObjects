@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.leads;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -43,7 +43,7 @@ public class Entry {
      * Information whether test mode is enabled
      */
 
-    private BoolInt testMode;
+    private Boolean testMode;
 
     /**
      * Start date in Unixtime (for com.thebrodyaga.vkobjects.status=2)
@@ -78,7 +78,7 @@ public class Entry {
     }
 
     public boolean isTestMode() {
-        return testMode == BoolInt.YES;
+        return testMode;
     }
 
     public Integer getStartDate() {

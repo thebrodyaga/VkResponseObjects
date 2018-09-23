@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.messages;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.Geo;
 
 import java.util.List;
@@ -27,7 +27,7 @@ public class Message {
      * Information whether the message is outcoming
      */
 
-    private BoolInt out;
+    private Boolean out;
 
     /**
      * Message author's ID
@@ -51,19 +51,19 @@ public class Message {
      * Is it an important message
      */
 
-    private BoolInt important;
+    private Boolean important;
 
     /**
      * Is it an deleted message
      */
 
-    private BoolInt deleted;
+    private Boolean deleted;
 
     /**
      * Whether the message contains smiles
      */
 
-    private BoolInt emoji;
+    private Boolean emoji;
 
     /**
      * Forwarded com.thebrodyaga.vkobjects.messages
@@ -75,7 +75,7 @@ public class Message {
      * Information whether the com.thebrodyaga.vkobjects.messages is read
      */
 
-    private BoolInt readState;
+    private Boolean readState;
 
     /**
      * Message title or chat title
@@ -173,7 +173,7 @@ public class Message {
     }
 
     public boolean isOut() {
-        return out == BoolInt.YES;
+        return out;
     }
 
     public Integer getUserId() {
@@ -189,15 +189,15 @@ public class Message {
     }
 
     public boolean getImportant() {
-        return important == BoolInt.YES;
+        return important;
     }
 
     public boolean getDeleted() {
-        return deleted == BoolInt.YES;
+        return deleted;
     }
 
     public boolean getEmoji() {
-        return emoji == BoolInt.YES;
+        return emoji;
     }
 
     public List<Message> getFwdMessages() {
@@ -205,7 +205,7 @@ public class Message {
     }
 
     public boolean isReadState() {
-        return readState == BoolInt.YES;
+        return readState;
     }
 
     public String getTitle() {

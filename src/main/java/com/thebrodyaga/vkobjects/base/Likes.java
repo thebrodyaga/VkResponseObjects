@@ -12,7 +12,7 @@ public class Likes {
      * Information whether current user com.thebrodyaga.vkobjects.likes the photo
      */
 
-    private BoolInt userLikes;
+    private Boolean userLikes;
 
     /**
      * Likes number
@@ -21,7 +21,7 @@ public class Likes {
     private Integer count;
 
     public boolean isUserLikes() {
-        return userLikes == BoolInt.YES;
+        return userLikes;
     }
 
     public Integer getCount() {

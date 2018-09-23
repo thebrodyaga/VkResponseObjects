@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -25,7 +25,7 @@ public class GroupLink {
      * Information whether the title can be edited
      */
 
-    private BoolInt editTitle;
+    private Boolean editTitle;
 
     /**
      * Link description
@@ -37,7 +37,7 @@ public class GroupLink {
      * Information whether the image on processing
      */
 
-    private BoolInt imageProcessing;
+    private Boolean imageProcessing;
 
     public Integer getId() {
         return id;
@@ -48,7 +48,7 @@ public class GroupLink {
     }
 
     public boolean isEditTitle() {
-        return editTitle == BoolInt.YES;
+        return editTitle;
     }
 
     public String getDesc() {
@@ -56,7 +56,7 @@ public class GroupLink {
     }
 
     public boolean isImageProcessing() {
-        return imageProcessing == BoolInt.YES;
+        return imageProcessing;
     }
 
     @Override

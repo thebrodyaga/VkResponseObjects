@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -31,7 +31,7 @@ public class GroupXtrInvitedBy {
      * Information whether community is closed
      */
 
-    private BoolInt isClosed;
+    private Boolean isClosed;
 
     /**
      * Community type
@@ -43,7 +43,7 @@ public class GroupXtrInvitedBy {
      * Information whether current user is manager
      */
 
-    private BoolInt isAdmin;
+    private Boolean isAdmin;
 
     /**
      * Level of current user's credentials as manager
@@ -55,7 +55,7 @@ public class GroupXtrInvitedBy {
      * Information whether current user is member
      */
 
-    private BoolInt isMember;
+    private Boolean isMember;
 
     /**
      * URL of square photo of the community with 50 pixels in width
@@ -94,7 +94,7 @@ public class GroupXtrInvitedBy {
     }
 
     public boolean isClosed() {
-        return isClosed == BoolInt.YES;
+        return isClosed;
     }
 
     public GroupXtrInvitedByType getType() {
@@ -102,7 +102,7 @@ public class GroupXtrInvitedBy {
     }
 
     public boolean isAdmin() {
-        return isAdmin == BoolInt.YES;
+        return isAdmin;
     }
 
     public GroupXtrInvitedByAdminLevel getAdminLevel() {
@@ -110,7 +110,7 @@ public class GroupXtrInvitedBy {
     }
 
     public boolean isMember() {
-        return isMember == BoolInt.YES;
+        return isMember;
     }
 
     public String getPhoto50() {

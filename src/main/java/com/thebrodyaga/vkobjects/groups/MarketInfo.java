@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.market.Currency;
 
 import java.util.Objects;
@@ -14,7 +14,7 @@ public class MarketInfo {
      * Information whether the com.thebrodyaga.vkobjects.market is enabled
      */
 
-    private BoolInt enabled;
+    private Boolean enabled;
 
     /**
      * Minimum price
@@ -50,7 +50,7 @@ public class MarketInfo {
     private String currencyText;
 
     public boolean isEnabled() {
-        return enabled == BoolInt.YES;
+        return enabled;
     }
 
     public Long getPriceMin() {

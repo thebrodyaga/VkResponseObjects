@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.market;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.Likes;
 import com.thebrodyaga.vkobjects.photos.Photo;
 
@@ -19,13 +19,13 @@ public class MarketItemFull extends MarketItem {
      * Information whether current use can comment the item
      */
 
-    private BoolInt canComment;
+    private Boolean canComment;
 
     /**
      * Information whether current use can repost the item
      */
 
-    private BoolInt canRepost;
+    private Boolean canRepost;
 
 
     private Likes likes;
@@ -41,11 +41,11 @@ public class MarketItemFull extends MarketItem {
     }
 
     public boolean canComment() {
-        return canComment == BoolInt.YES;
+        return canComment;
     }
 
     public boolean canRepost() {
-        return canRepost == BoolInt.YES;
+        return canRepost;
     }
 
     public Likes getLikes() {

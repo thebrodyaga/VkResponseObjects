@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.board.responses;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.board.DefaultOrder;
 import com.thebrodyaga.vkobjects.board.Topic;
 
@@ -28,7 +28,7 @@ public class GetTopicsResponse {
      * Information whether current user can add topic
      */
 
-    private BoolInt canAddTopics;
+    private Boolean canAddTopics;
 
     public Integer getCount() {
         return count;
@@ -43,7 +43,7 @@ public class GetTopicsResponse {
     }
 
     public boolean canAddTopics() {
-        return canAddTopics == BoolInt.YES;
+        return canAddTopics;
     }
 
     @Override

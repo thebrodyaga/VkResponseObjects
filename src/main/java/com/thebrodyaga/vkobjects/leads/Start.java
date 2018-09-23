@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.leads;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -13,7 +13,7 @@ public class Start {
      * Information whether test mode is enabled
      */
 
-    private BoolInt testMode;
+    private Boolean testMode;
 
     /**
      * Session data
@@ -22,7 +22,7 @@ public class Start {
     private String vkSid;
 
     public boolean isTestMode() {
-        return testMode == BoolInt.YES;
+        return testMode;
     }
 
     public String getVkSid() {

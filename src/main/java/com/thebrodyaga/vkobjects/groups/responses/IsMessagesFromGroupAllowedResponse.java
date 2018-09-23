@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups.responses;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -14,9 +14,9 @@ public class IsMessagesFromGroupAllowedResponse {
      * Information whether user allowed to send com.thebrodyaga.vkobjects.messages from community
      */
 
-    private BoolInt isAllowed;
+    private Boolean isAllowed;
 
-    public BoolInt getIsAllowed() {
+    public Boolean getIsAllowed() {
         return isAllowed;
     }
 

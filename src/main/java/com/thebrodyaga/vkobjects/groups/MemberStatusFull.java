@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -13,7 +13,7 @@ public class MemberStatusFull {
      * Information whether user is a member of the group
      */
 
-    private BoolInt member;
+    private Boolean member;
 
     /**
      * User ID
@@ -25,16 +25,16 @@ public class MemberStatusFull {
      * Information whether user has been invited to the group
      */
 
-    private BoolInt invitation;
+    private Boolean invitation;
 
     /**
      * Information whether user has send request to the group
      */
 
-    private BoolInt request;
+    private Boolean request;
 
     public boolean isMember() {
-        return member == BoolInt.YES;
+        return member;
     }
 
     public Integer getUserId() {
@@ -42,11 +42,11 @@ public class MemberStatusFull {
     }
 
     public boolean isInvitation() {
-        return invitation == BoolInt.YES;
+        return invitation;
     }
 
     public boolean isRequest() {
-        return request == BoolInt.YES;
+        return request;
     }
 
     @Override

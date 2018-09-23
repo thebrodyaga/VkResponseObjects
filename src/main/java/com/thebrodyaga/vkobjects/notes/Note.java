@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.notes;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -31,7 +31,7 @@ public class Note {
      * Information whether current user can comment the note
      */
 
-    private BoolInt canComment;
+    private Boolean canComment;
 
     /**
      * Date when the note has been created in Unixtime
@@ -76,7 +76,7 @@ public class Note {
     }
 
     public boolean canComment() {
-        return canComment == BoolInt.YES;
+        return canComment;
     }
 
     public Integer getDate() {

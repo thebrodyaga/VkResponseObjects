@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.groups.responses;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -13,30 +13,30 @@ public class IsMemberExtendedResponse {
      * Information whether user is a member of the group
      */
 
-    private BoolInt member;
+    private Boolean member;
 
     /**
      * Information whether user has been invited to the group
      */
 
-    private BoolInt invitation;
+    private Boolean invitation;
 
     /**
      * Information whether user has sent request to the group
      */
 
-    private BoolInt request;
+    private Boolean request;
 
     public boolean isMember() {
-        return member == BoolInt.YES;
+        return member;
     }
 
     public boolean isInvitation() {
-        return invitation == BoolInt.YES;
+        return invitation;
     }
 
     public boolean isRequest() {
-        return request == BoolInt.YES;
+        return request;
     }
 
     @Override

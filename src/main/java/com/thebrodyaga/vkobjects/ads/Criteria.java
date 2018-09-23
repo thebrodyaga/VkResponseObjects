@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.ads;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -157,7 +157,7 @@ public class Criteria {
      * Information whether the user has proceeded VK payments before
      */
 
-    private BoolInt paying;
+    private Boolean paying;
 
     /**
      * Travellers only
@@ -286,7 +286,7 @@ public class Criteria {
     }
 
     public boolean isPaying() {
-        return paying == BoolInt.YES;
+        return paying;
     }
 
     public boolean isTravellers() {

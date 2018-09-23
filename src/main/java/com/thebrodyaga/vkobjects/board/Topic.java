@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.board;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -49,13 +49,13 @@ public class Topic {
      * Information whether the topic is closed
      */
 
-    private BoolInt isClosed;
+    private Boolean isClosed;
 
     /**
      * Information whether the topic is fixed
      */
 
-    private BoolInt isFixed;
+    private Boolean isFixed;
 
     /**
      * Comments number
@@ -88,11 +88,11 @@ public class Topic {
     }
 
     public boolean isClosed() {
-        return isClosed == BoolInt.YES;
+        return isClosed;
     }
 
     public boolean isFixed() {
-        return isFixed == BoolInt.YES;
+        return isFixed;
     }
 
     public Integer getComments() {

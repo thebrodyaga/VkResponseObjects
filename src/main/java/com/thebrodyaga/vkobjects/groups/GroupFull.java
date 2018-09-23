@@ -2,7 +2,7 @@ package com.thebrodyaga.vkobjects.groups;
 
 
 import com.thebrodyaga.vkobjects.base.BaseObject;
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.base.Country;
 import com.thebrodyaga.vkobjects.base.Place;
 
@@ -27,19 +27,19 @@ public class GroupFull extends Group {
      * Information whether community is in faves
      */
 
-    private BoolInt isFavorite;
+    private Boolean isFavorite;
 
     /**
      * Information whether current user hide posts from community in com.thebrodyaga.vkobjects.newsfeed
      */
 
-    private BoolInt isHiddenFromFeed;
+    private Boolean isHiddenFromFeed;
 
     /**
      * Information whether current user is subscribed
      */
 
-    private BoolInt isSubscribed;
+    private Boolean isSubscribed;
 
 
     private BaseObject city;
@@ -51,13 +51,13 @@ public class GroupFull extends Group {
      * Information whether community is verified
      */
 
-    private BoolInt verified;
+    private Boolean verified;
 
     /**
      * Information whether the user a "fire" pictogram
      */
 
-    private BoolInt trending;
+    private Boolean trending;
 
     /**
      * Community description
@@ -87,13 +87,13 @@ public class GroupFull extends Group {
      * Information whether current user can post on community's com.thebrodyaga.vkobjects.wall
      */
 
-    private BoolInt canPost;
+    private Boolean canPost;
 
     /**
      * Information whether current user can see all posts on community's com.thebrodyaga.vkobjects.wall
      */
 
-    private BoolInt canSeeAllPosts;
+    private Boolean canSeeAllPosts;
 
     /**
      * Type of group, start date of event or category of public page
@@ -111,19 +111,19 @@ public class GroupFull extends Group {
      * Information whether current user can create topic
      */
 
-    private BoolInt canCreateTopic;
+    private Boolean canCreateTopic;
 
     /**
      * Information whether current user can upload doc
      */
 
-    private BoolInt canUploadDoc;
+    private Boolean canUploadDoc;
 
     /**
      * Information whether current user can upload com.thebrodyaga.vkobjects.video
      */
 
-    private BoolInt canUploadVideo;
+    private Boolean canUploadVideo;
 
     /**
      * Community com.thebrodyaga.vkobjects.status
@@ -159,13 +159,13 @@ public class GroupFull extends Group {
      * Information whether current user can send a message to community
      */
 
-    private BoolInt canMessage;
+    private Boolean canMessage;
 
     /**
      * Information whether current user allow to community send a message
      */
 
-    private BoolInt isMessagesAllowed;
+    private Boolean isMessagesAllowed;
 
     /**
      * Label for star date
@@ -189,7 +189,7 @@ public class GroupFull extends Group {
      * Information whether community has photo
      */
 
-    private BoolInt hasPhoto;
+    private Boolean hasPhoto;
 
     /**
      * Information whether age limit
@@ -218,15 +218,15 @@ public class GroupFull extends Group {
     }
 
     public boolean isFavorite() {
-        return isFavorite == BoolInt.YES;
+        return isFavorite;
     }
 
     public boolean isHiddenFromFeed() {
-        return isHiddenFromFeed == BoolInt.YES;
+        return isHiddenFromFeed;
     }
 
     public boolean isSubscribed() {
-        return isSubscribed == BoolInt.YES;
+        return isSubscribed;
     }
 
     public BaseObject getCity() {
@@ -238,7 +238,7 @@ public class GroupFull extends Group {
     }
 
     public boolean isVerified() {
-        return verified == BoolInt.YES;
+        return verified;
     }
 
     public String getDescription() {
@@ -262,11 +262,11 @@ public class GroupFull extends Group {
     }
 
     public boolean canPost() {
-        return canPost == BoolInt.YES;
+        return canPost;
     }
 
     public boolean canSeeAllPosts() {
-        return canSeeAllPosts == BoolInt.YES;
+        return canSeeAllPosts;
     }
 
     public String getActivity() {
@@ -278,15 +278,15 @@ public class GroupFull extends Group {
     }
 
     public boolean canCreateTopic() {
-        return canCreateTopic == BoolInt.YES;
+        return canCreateTopic;
     }
 
     public boolean canUploadDoc() {
-        return canUploadDoc == BoolInt.YES;
+        return canUploadDoc;
     }
 
     public boolean canUploadVideo() {
-        return canUploadVideo == BoolInt.YES;
+        return canUploadVideo;
     }
 
     public String getStatus() {
@@ -314,11 +314,11 @@ public class GroupFull extends Group {
     }
 
     public boolean canMessage() {
-        return canMessage == BoolInt.YES;
+        return canMessage;
     }
 
     public boolean isMessagesAllowed() {
-        return isMessagesAllowed == BoolInt.YES;
+        return isMessagesAllowed;
     }
 
     public String getPublicDateLabel() {
@@ -334,7 +334,7 @@ public class GroupFull extends Group {
     }
 
     public boolean hasPhoto() {
-        return hasPhoto == BoolInt.YES;
+        return hasPhoto;
     }
 
     public GroupFullAgeLimits getAgeLimits() {
@@ -350,7 +350,7 @@ public class GroupFull extends Group {
     }
 
     public boolean isTrending() {
-        return trending == BoolInt.YES;
+        return trending;
     }
 
     @Override

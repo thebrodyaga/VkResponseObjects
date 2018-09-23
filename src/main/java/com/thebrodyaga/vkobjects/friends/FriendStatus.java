@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.friends;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -31,7 +31,7 @@ public class FriendStatus {
      * Information whether request is unviewed
      */
 
-    private BoolInt readState;
+    private Boolean readState;
 
     /**
      * MD5 hash for the result validation
@@ -52,7 +52,7 @@ public class FriendStatus {
     }
 
     public boolean isReadState() {
-        return readState == BoolInt.YES;
+        return readState;
     }
 
     public String getSign() {

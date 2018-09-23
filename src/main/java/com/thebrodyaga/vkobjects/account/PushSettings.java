@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.account;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -13,7 +13,7 @@ public class PushSettings {
      * Information whether com.thebrodyaga.vkobjects.notifications are disabled
      */
 
-    private BoolInt disabled;
+    private Boolean disabled;
 
     /**
      * Time until that com.thebrodyaga.vkobjects.notifications are disabled in Unixtime
@@ -28,7 +28,7 @@ public class PushSettings {
     private PushParams settings;
 
     public boolean isDisabled() {
-        return disabled == BoolInt.YES;
+        return disabled;
     }
 
     public Integer getDisabledUntil() {

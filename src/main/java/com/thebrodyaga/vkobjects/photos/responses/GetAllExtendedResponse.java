@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.photos.responses;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 import com.thebrodyaga.vkobjects.photos.PhotoFullXtrRealOffset;
 
 import java.util.List;
@@ -24,7 +24,7 @@ public class GetAllExtendedResponse {
      * Information whether next page is presented
      */
 
-    private BoolInt more;
+    private Boolean more;
 
     public Integer getCount() {
         return count;
@@ -35,7 +35,7 @@ public class GetAllExtendedResponse {
     }
 
     public boolean isMore() {
-        return more == BoolInt.YES;
+        return more;
     }
 
     @Override

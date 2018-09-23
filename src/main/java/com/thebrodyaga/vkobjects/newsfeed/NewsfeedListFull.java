@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.newsfeed;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.List;
 import java.util.Objects;
@@ -14,13 +14,13 @@ public class NewsfeedListFull extends NewsfeedList {
      * Information whether reposts hiding is enabled
      */
 
-    private BoolInt noReposts;
+    private Boolean noReposts;
 
 
     private List<Integer> sourceIds;
 
     public boolean isNoReposts() {
-        return noReposts == BoolInt.YES;
+        return noReposts;
     }
 
     public List<Integer> getSourceIds() {

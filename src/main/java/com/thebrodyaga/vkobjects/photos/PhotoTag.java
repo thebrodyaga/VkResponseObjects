@@ -1,7 +1,7 @@
 package com.thebrodyaga.vkobjects.photos;
 
 
-import com.thebrodyaga.vkobjects.base.BoolInt;
+
 
 import java.util.Objects;
 
@@ -67,7 +67,7 @@ public class PhotoTag {
      * Information whether the tag is reviewed
      */
 
-    private BoolInt viewed;
+    private Boolean viewed;
 
     public Integer getUserId() {
         return userId;
@@ -106,7 +106,7 @@ public class PhotoTag {
     }
 
     public boolean isViewed() {
-        return viewed == BoolInt.YES;
+        return viewed;
     }
 
     @Override
